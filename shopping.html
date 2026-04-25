@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة المشتريات</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="shopping.css">
+</head>
+<body>
+    <nav class="content">
+        <ul class="header">
+            <li><a class="hhh" href="index.html">الصفحة الرئيسية</a></li>
+            <li><a class="hhh" href="books.html">معرض الكتب</a></li>
+            <li><a class="hhh" href="shopping.html">سلة المشتريات</a></li>
+            <li><a class="hhh" href="more.html">الكتب الاكثر قراءة</a></li>
+            <li><a class="hhh" href="contact.html">تواصل معنا</a></li>
+            <li><a class="hhh" href="login2.html">انضم الينا</a></li>
+            <li><a class="hhh" href="dev.html">المطورين</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="cart-header">
+            <h1>سلة المشتريات</h1>
+            <div class="cart-summary">
+                <span class="items-count" id="itemsCount">0 منتج</span>
+                <span class="total-price" id="totalPrice">0$</span>
+            </div>
+        </div>
+
+        <div class="empty-cart" id="emptyCart">
+            <div class="empty-icon">🛒</div>
+            <h2>سلة المشتريات فارغة</h2>
+            <p>لم تقم بإضافة أي منتجات بعد</p>
+            <a href="books.html" class="btn-empty">تسوق الآن</a>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+        </div>
+
+        <div class="checkout-section" id="checkoutSection" style="display: none;">
+            <div class="checkout-summary">
+                <div class="summary-row">
+                    <span>المجموع الفرعي:</span>
+                    <span class="subtotal" id="subtotal">0$</span>
+                </div>
+                <div class="summary-row">
+                    <span>الشحن:</span>
+                    <span class="shipping">10$</span>
+                </div>
+                <hr>
+                <div class="summary-row total-row">
+                    <span>الإجمالي:</span>
+                    <span class="grand-total" id="grandTotal">5$</span>
+                </div>
+            </div>
+            <button class="btn-checkout" onclick="checkout()">
+                إتمام الطلب
+            </button>
+        </div>
+    </div>
+
+    <div class="toast-box" id="toast-box">
+        <span id="toast-msg"></span>
+    </div>
+
+    <script src="shopping.js"></script>
+</body>
+</html>
