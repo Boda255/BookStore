@@ -472,7 +472,7 @@ body {
   opacity: 1;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
@@ -511,7 +511,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
