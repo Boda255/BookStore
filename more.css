@@ -118,13 +118,13 @@ body {
     font-weight: bold;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .three {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .three {
         grid-template-columns: 1fr;
     }
