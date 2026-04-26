@@ -27,9 +27,8 @@
 <div class="modal">
   <h2>تواصل معنا</h2>
 
-  <form>
-
-    <div class="input-group">
+    <form id="contactForm">
+      <div class="input-group">
       <input type="text" placeholder="الاسم بالكامل" required>
       <i class="fa fa-user"></i>
     </div>
@@ -85,6 +84,15 @@
   </div>
 
 </div>
+  <script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // يمنع الإرسال العادي
 
+    // ممكن تعمل تأخير بسيط (اختياري)
+    setTimeout(() => {
+        window.location.href = "success2.html";
+    }, 500);
+});
+</script>
 </body>
 </html>
