@@ -107,7 +107,7 @@ body{
     text-decoration:underline;
 }
 
-@media(max-width:450px){
+@media(max-width:768px){
     .form-container{
     width:90%;
     }
@@ -136,13 +136,13 @@ body{
     background: linear-gradient(135deg, #66BB6A, #388E3C);
     transform: scale(1.05);
 }
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .three {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .three {
     grid-template-columns: 1fr;
   }
